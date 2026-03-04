@@ -396,6 +396,8 @@ h4 {
 .hero {
   min-height: 100vh;
   display: flex;
+    position: absolute;
+    right: 20px;
   align-items: center;
   padding-top: 80px;
   position: relative;
@@ -1471,6 +1473,11 @@ textarea.form-input {
     object-fit: contain;
   }
 
+  .navbar .container {
+    justify-content: center;
+    position: relative;
+  }
+
   .section {
     padding: 70px 0;
   }
@@ -1502,6 +1509,8 @@ textarea.form-input {
 
   .hamburger {
     display: flex;
+    position: absolute;
+    right: 20px;
   }
 
   .grid-2,
