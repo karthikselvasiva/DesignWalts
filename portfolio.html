@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio | Web & Branding Projects | DesignWalts</title>
+    <meta name="description"
+        content="See our portfolio of premium design work across web design, branding, logo design, and digital marketing solutions.">
+    <link rel="canonical" href="https://designwalts.com/portfolio">
+    <meta property="og:title" content="Design Portfolio | DesignWalts">
+    <meta property="og:description"
+        content="See our portfolio of premium design work across web design, branding, logo design, and digital marketing.">
+    <meta property="og:url" content="https://designwalts.com/portfolio">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="DesignWalts Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
+            </div>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="label" style="color:var(--clr-teal);display:block;margin-bottom:12px;">Our Work</span>
+            <h1>Our Work Speaks for Itself</h1>
+            <p>Explore our portfolio to see how we've elevated brands across industries.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web-design">Web Design</button>
+                <button class="filter-btn" data-filter="logo-design">Logo Design</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="social-media">Social Media</button>
+                <button class="filter-btn" data-filter="posters">Posters</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <div class="portfolio-item animate animate-scale" data-category="web-design"
+                    onclick="openProjectModal({title:'Modern E-commerce Platform',category:'Web Design',image:'assets/images/portfolio-1.jpg',description:'A fully responsive e-commerce website designed for a fashion brand, featuring modern UI, seamless navigation, and conversion-optimized layouts.'})">
+                    <img src="assets/images/portfolio-1.jpg" alt="Modern E-commerce Website" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="label">Web Design</span>
+                        <h4>Modern E-commerce Platform</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item animate animate-scale" data-category="branding"
+                    onclick="openProjectModal({title:'Premium Brand Identity Suite',category:'Branding',image:'assets/images/portfolio-2.jpg',description:'Complete brand identity package including logo, color system, typography guide, and brand collateral for a luxury consultancy firm.'})">
+                    <img src="assets/images/portfolio-2.jpg" alt="Premium Brand Identity" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="label">Branding</span>
+                        <h4>Premium Brand Identity Suite</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item animate animate-scale" data-category="social-media"
+                    onclick="openProjectModal({title:'Social Media Campaign',category:'Social Media',image:'assets/images/portfolio-3.jpg',description:'Full social media campaign design including Instagram posts, stories, and carousel graphics for a tech startup launch campaign.'})">
+                    <img src="assets/images/portfolio-3.jpg" alt="Social Media Campaign" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="label">Social Media</span>
+                        <h4>Social Media Campaign</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item animate animate-scale" data-category="logo-design"
+                    onclick="openProjectModal({title:'Minimalist Logo Collection',category:'Logo Design',image:'assets/images/portfolio-4.jpg',description:'Clean, versatile logo designs for various businesses including tech companies, restaurants, and wellness brands.'})">
+                    <img src="assets/images/portfolio-4.jpg" alt="Minimalist Logo Collection" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="label">Logo Design</span>
+                        <h4>Minimalist Logo Collection</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item animate animate-scale" data-category="web-design"
+                    onclick="openProjectModal({title:'SaaS Dashboard UI',category:'Web Design',image:'assets/images/portfolio-5.jpg',description:'Clean, intuitive dashboard design for a SaaS analytics platform with data visualization and modern component design.'})">
+                    <img src="assets/images/portfolio-5.jpg" alt="SaaS Dashboard UI" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="label">Web Design</span>
+                        <h4>SaaS Dashboard UI</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item animate animate-scale" data-category="posters"
+                    onclick="openProjectModal({title:'Event Poster Series',category:'Posters',image:'assets/images/portfolio-6.jpg',description:'Creative event poster designs for a music festival featuring bold typography, vivid colors, and dynamic layouts.'})">
+                    <img src="assets/images/portfolio-6.jpg" alt="Event Poster Series" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="label">Posters</span>
+                        <h4>Event Poster Series</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item animate animate-scale" data-category="branding"
+                    onclick="openProjectModal({title:'Restaurant Brand Package',category:'Branding',image:'assets/images/portfolio-7.jpg',description:'Complete branding for a gourmet restaurant chain including logo, menu design, signage, and marketing materials.'})">
+                    <img src="assets/images/portfolio-7.jpg" alt="Restaurant Brand Package" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="label">Branding</span>
+                        <h4>Restaurant Brand Package</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item animate animate-scale" data-category="social-media"
+                    onclick="openProjectModal({title:'YouTube Channel Branding',category:'Social Media',image:'assets/images/portfolio-8.jpg',description:'Complete YouTube channel branding including banner, thumbnails, intro templates, and end screen designs.'})">
+                    <img src="assets/images/portfolio-8.jpg" alt="YouTube Channel Branding" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="label">Social Media</span>
+                        <h4>YouTube Channel Branding</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item animate animate-scale" data-category="logo-design"
+                    onclick="openProjectModal({title:'Corporate Logo Redesign',category:'Logo Design',image:'assets/images/portfolio-9.jpg',description:'Strategic logo redesign for an established financial services company, modernizing their visual identity while preserving brand equity.'})">
+                    <img src="assets/images/portfolio-9.jpg" alt="Corporate Logo Redesign" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="label">Logo Design</span>
+                        <h4>Corporate Logo Redesign</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="cta-shapes">
+            <div class="cta-shape"></div>
+            <div class="cta-shape"></div>
+            <div class="cta-shape"></div>
+        </div>
+        <div class="container" style="position:relative;z-index:2;">
+            <h2>Want Your Next Design?</h2>
+            <p>Let's create something stunning for your brand. Get in touch today.</p>
+            <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project →</a>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="DesignWalts Logo" style="height:65px;"></a>
+                    <p>A premium digital design studio dedicated to crafting creative, modern, and impactful design
+                        solutions for brands that want to stand out.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">f</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">ig</a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a
+                        href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a
+                        href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4><a href="services.html">Web Designing</a><a href="services.html">Logo Design</a><a
+                        href="services.html">Poster Design</a><a href="services.html">Visiting Cards</a><a
+                        href="services.html">Social Creatives</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4><a href="mailto:designwalts@gmail.com">📧 designwalts@gmail.com</a><a
+                        href="tel:918124393132">📞 +91 8124393132</a><a href="#">📍 Chennai, Tamil Nadu, India</a><a
+                        href="https://wa.me/qr/I24XGIDK676VC1" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2024 DesignWalts. All rights reserved.</span>
+                <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a> · Designed by DesignWalts</span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/qr/I24XGIDK676VC1" class="whatsapp-float" target="_blank" rel="noopener"
+        aria-label="Chat on WhatsApp">💬</a>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
